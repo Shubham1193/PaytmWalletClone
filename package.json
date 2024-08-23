@@ -1,0 +1,41 @@
+{
+  "name": "week-18",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "db:generate" : "cd packages/db && npx prisma migtate && cd ../..",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "autoprefixer": "^10.4.20",
+    "colors": "^1.4.0",
+    "postcss": "^8.4.40",
+    "prettier": "^3.2.5",
+    "tailwindcss": "^3.4.7",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@10.2.4",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "@emotion/cache": "^11.13.1",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material-nextjs": "^5.16.6",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+    "@mui/x-charts": "^7.12.0",
+    "chart.js": "^4.4.3",
+    "react-chartjs-2": "^5.2.0",
+    "styled-components": "^6.1.12",
+    "tailwind-colors": "^1.1.0"
+  }
+}
