@@ -16,6 +16,5 @@ RUN cd packages/db && npx prisma generate && cd ../..
 # docker build -t mytestapp -f Docker/Dockerfile.user . no c p in root
 RUN npm run build
 
-EXPOSE 3001
 
 CMD ["npm", "run", "start-user-app"]
