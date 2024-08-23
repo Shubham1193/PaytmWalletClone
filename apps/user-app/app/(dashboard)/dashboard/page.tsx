@@ -8,11 +8,6 @@ import { Session } from "inspector";
 
 
 
-// sfdlhslf
-
-
-
-
 async function getBalance() {
     const session = await getServerSession(authOptions);
     const balance = await prisma.balance.findFirst({
